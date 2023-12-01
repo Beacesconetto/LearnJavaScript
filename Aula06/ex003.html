@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa...</title>
+    <style>
+            body {
+                /*Comentário em CSS */
+                background-color: rgb(164, 164, 212);
+                color: white;
+                font: normal 20pt Arial;
+            }
+            h1{
+                color: rgb(255, 255, 110);
+            }
+    </style>
+</head>
+<body>
+    <!-- Comentário em HTML-->
+   <h1>Olá, Mundo</h1> 
+   <p> Já me livrei da maldição!!</p>
+   <script>
+    //Não precisa ter o window antes do prompt
+    //var e let faz a mesma coisa
+   var n1  = Number.parseInt(window.prompt('Digite um número: ')); // O prompt trata o que eles recebem como String
+   var n2  = Number.parseInt(window.prompt('Digite outro número: '));// O Numebr.parseInt converte a String para um número inteiro
+   // Se botar só Number ele deixa o JavaScript decidir
+   //Para converter para String botar n.toString ou String(n) EX: window.alert('A soma dos valores é: ' + String(s));
+   var s = n1 + n2
+   window.alert('A soma entre ${n1} e ${n2} é igual a ${s}');// Usar o $ com o {} se chama Template string
+   // (number + number) -> + para adição
+   // (String + String) -> + para relacionar ideias
+   </script>
+</body>
+</html>
